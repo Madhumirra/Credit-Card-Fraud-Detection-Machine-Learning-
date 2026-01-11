@@ -1,9 +1,9 @@
 # credit-card-fraud-XGBoost
-Credit Card Fraud Detection using XGBoost with SHAP explainability — interactive Gradio dashboard for metrics, feature importance, local &amp; what-if analysis, and batch predictions.
+Credit Card Fraud Detection using XGBoost with — interactive Gradio dashboard for metrics, feature importance, local &amp; what-if analysis, and batch predictions.
 # 💳 Credit Card Fraud Detection — Explainable AI Dashboard
 
 ## 🔎 Project Overview
-This project demonstrates **Credit Card Fraud Detection** using **XGBoost** with **Explainable AI (SHAP)**.  
+This project demonstrates **Credit Card Fraud Detection** using **XGBoost**  
 It includes a **Gradio dashboard** that allows analysts to:
 - 📈 View Model Metrics (ROC, PR, F1-score)
 - 📊 Understand Global Feature Importance
