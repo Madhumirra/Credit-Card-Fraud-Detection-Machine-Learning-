@@ -1,4 +1,4 @@
-# credit-card-fraud-XGBoost-SHAP
+# credit-card-fraud-XGBoost
 Credit Card Fraud Detection using XGBoost with SHAP explainability — interactive Gradio dashboard for metrics, feature importance, local &amp; what-if analysis, and batch predictions.
 # 💳 Credit Card Fraud Detection — Explainable AI Dashboard
 
