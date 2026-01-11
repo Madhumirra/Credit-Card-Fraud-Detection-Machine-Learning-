@@ -1,51 +1,54 @@
 # credit-card-fraud-XGBoost
-Credit Card Fraud Detection using XGBoost with — interactive Gradio dashboard for metrics, feature importance, local &amp; what-if analysis, and batch predictions.
-# 💳 Credit Card Fraud Detection — Explainable AI Dashboard
+
+Credit Card Fraud Detection using XGBoost with robust evaluation on highly imbalanced transaction data.
+
+# 💳 Credit Card Fraud Detection using Machine Learning
 
 ## 🔎 Project Overview
-This project demonstrates **Credit Card Fraud Detection** using **XGBoost**  
-It includes a **Gradio dashboard** that allows analysts to:
-- 📈 View Model Metrics (ROC, PR, F1-score)
-- 📊 Understand Global Feature Importance
-- 🔎 Inspect Local Explanations for transactions
-- 🧪 Perform What-If Analysis on top features
-- 📥 Upload CSVs for Batch Prediction
+This project demonstrates **Credit Card Fraud Detection** using **XGBoost**, a powerful machine learning algorithm for structured data.  
+The objective is to accurately identify fraudulent transactions while handling severe class imbalance and evaluating real-world business impact.
+
+The project focuses on:
+- Building a reliable fraud detection model
+- Using appropriate evaluation metrics for imbalanced data
+- Measuring business cost instead of relying only on accuracy
 
 ---
 
 ## 📂 Repository Structure
-- `creditcard_fraud.ipynb` → Main notebook (model training + Gradio app)
+- `creditcard_fraud.ipynb` → Main notebook (data preprocessing, model training, evaluation)
 - `requirements.txt` → Required dependencies
 - `.gitignore` → Ignore datasets, cache, junk files
 - `data/creditcard_demo_sample.csv` → Small demo file with legit + fraud rows
-- `outputs/` → ROC, PR
+- `outputs/` → ROC and PR curve outputs
 
 ---
 
 ## 📊 Results
-- **ROC AUC**: ~0.99  
-- **PR AUC**: ~0.92  
-- **F1-score**: (calculated in notebook)  
-- **Business KPI**:  
-  - FN (missed fraud) cost = ₹10,000  
-  - FP (false alarm) cost = ₹500  
-  - Estimated test-set business loss calculated  
+The model was evaluated using metrics suitable for imbalanced fraud data:
 
----
+- **ROC-AUC**: ~0.99  
+  - Indicates excellent separation between fraud and non-fraud transactions
 
-## 📸 Dashboard Demo
-**Global Feature Importance**  
-![Global Importance](outputs/roc_curve.png)  
+- **PR-AUC**: ~0.92  
+  - Reflects strong fraud detection performance when fraud cases are rare
 
-**Local Explanation**  
-![Local Explanation](outputs/shap_beeswarm.png)  
+- **F1-score**:  
+  - Balanced precision and recall (calculated in notebook)
+
+### 💼 Business KPI Evaluation
+To reflect real-world impact, business costs were assigned:
+- **False Negative (missed fraud)** cost = ₹10,000  
+- **False Positive (false alarm)** cost = ₹500  
+
+Using these values, the estimated business loss on the test dataset was calculated to assess practical usefulness of the model.
 
 ---
 
 ## ⚙️ Installation
-Clone repo and install dependencies:
+Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/<your-username>/fraud-detection-explainable-ai.git
-cd fraud-detection-explainable-ai
+git clone https://github.com/<your-username>/credit-card-fraud-XGBoost.git
+cd credit-card-fraud-XGBoost
 pip install -r requirements.txt
